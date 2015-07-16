@@ -31,8 +31,7 @@ var dir_cleaner = require('dir-cleaner');
 
 /**
  * When you invocate the required dir-cleaner function, it will return a
- * constructor 
- * required module. The object you pass as the 1st argument its properties
+ * constructor. The object you pass as the 1st argument its properties
  * will get bound to the 
  */
 var DirCleaner = dir_cleaner({

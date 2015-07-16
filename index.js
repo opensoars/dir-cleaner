@@ -1,4 +1,4 @@
-var dir_cleaner = require('./lib/index.js');
+var dir_cleaner = require('./lib/dir-cleaner.js');
 
 module.exports = dir_cleaner;
 

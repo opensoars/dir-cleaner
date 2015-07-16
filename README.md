@@ -42,13 +42,17 @@ var DirCleaner = dir_cleaner({
  * Create new instance.
  */
 var dirCleaner = new DirCleaner({
+
+    recurse: true,
+
     exclude: ['*.js', '.gitignore'],
-    logger: function() {
-        console.log('[dirCleaner]')
+
+    logger: function(msg) {
+        console.log('[dirCleaner]', msg);
     },
+
     /** Used to set properties to the instance */
     properties: {
-
     }
 });
 ```

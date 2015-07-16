@@ -1,5 +1,13 @@
 # dir-cleaner
 
+[![Code Climate](https://codeclimate.com/github/opensoars/dir-cleaner/badges/gpa.svg)](https://codeclimate.com/github/opensoars/dir-cleaner)
+[![Inline docs](https://inch-ci.org/github/opensoars/dir-cleaner.svg?branch=master)](http://inch-ci.org/github/opensoars/dir-cleaner)
+[![Build Status](http://img.shields.io/travis/opensoars/dir-cleaner.svg?style=flat)](https://travis-ci.org/opensoars/dir-cleaner)
+[![Coverage Status](http://img.shields.io/coveralls/opensoars/dir-cleaner.svg?style=flat)](https://coveralls.io/r/opensoars/dir-cleaner)
+
+[![Dependency Status](https://david-dm.org/opensoars/dir-cleaner.svg?style=flat)](https://david-dm.org/opensoars/dir-cleaner)
+[![Development Dependency Status](https://david-dm.org/opensoars/dir-cleaner/dev-status.svg?style=flat)](https://david-dm.org/opensoars/dir-cleaner#info=devDependencies&view=table)
+
 Configurable directory cleaner
 
 ---

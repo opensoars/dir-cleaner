@@ -1,24 +1,29 @@
 {
   "name": "dir-cleaner",
-
   "description": "Configurable directory cleaner",
-
   "version": "0.0.1",
+  "author": "Sam [opensoars] <sam.dev@outlook.com> (https://opensoars.github.io/)",
 
   "scripts": {
-    
+    "test": "node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha \"./tests/mocha/*.js\" && npm run coveralls",
+    "local_test": "node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha \"./tests/mocha/*.js\"",
+    "local_test_doc": "node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha \"./tests/mocha/*.js\" && npm run doc",
+    "coveralls": "node node_modules/coveralls/bin/coveralls.js < coverage/lcov.info",
+    "doc": "node node_modules/jsdoc/jsdoc.js -c ./doc/jsdoc_config.json --readme readme.MD"
   },
 
   "engines" : {
-    "node" : ">=0.8"
+    "node" : ">=0.10"
   },
 
   "dependencies": {
     
   },
-
   "devDependencies": {
-    
+    "mocha": "*",
+    "istanbul": "*",
+    "coveralls": "*",
+    "jsdoc": "*"
   },
 
   "repository": {
@@ -26,5 +31,13 @@
     "url": "https://github.com/opensoars/dir-cleaner"
   },
 
+  "keywords": [
+    "cleaner",
+    "clean",
+    "dir",
+    "directory",
+    "folder",
+    "Configurable"
+  ],
   "readmeFilename": "README.md"
 }

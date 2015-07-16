@@ -39,5 +39,7 @@
     "folder",
     "Configurable"
   ],
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+
+  "license": "MIT"
 }

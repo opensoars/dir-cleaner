@@ -58,4 +58,4 @@ var dirCleaner = new DirCleaner({
 `npm run local_test`, coverage information can be viewed in the browser at `./coverage/lcov-report/index.html`.
 
 ## Documentation
-`npm run doc`, documentation can be viewed in the browser at `./doc/jsdoc/index.html`
+`npm run doc`, documentation can be viewed in the browser at `./doc/jsdoc/index.html`.

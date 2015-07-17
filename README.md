@@ -25,6 +25,14 @@ var cleanTemp = require('dir-cleaner').basic('/temp');
 
 ```
 
+Basic one time usage
+```js
+require('dir-cleaner').basic('/temp')();
+
+// or
+require('dir-cleaner')('/temp');
+```
+
 Full control usage (wizardry):
 ```js
 var cleanTemp = (new (require('dir-cleaner')({dir: '/doc'}))({a: 'b'})).clean;
@@ -63,7 +71,7 @@ var dirCleaner = new DirCleaner({
 });
 
 dirCleaner.clean({
-    
+
 });
 ```
 

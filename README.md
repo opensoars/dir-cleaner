@@ -19,12 +19,18 @@ Configurable directory cleaner
 
 ## Use
 
-Basic usage:
+Basic usage
 ```js
-var tempCleaner = new ( require('dir-cleaner')({ dir: '/temp' }) );
+var cleanTemp = require('dir-cleaner').basic('/temp');
+
 ```
 
-Custom usage:
+Full control usage (wizardry):
+```js
+var cleanTemp = (new (require('dir-cleaner')({dir: '/doc'}))({a: 'b'})).clean;
+```
+
+Full control usage (non-wizardry):
 ```js
 
 var dir_cleaner = require('dir-cleaner');
@@ -32,9 +38,9 @@ var dir_cleaner = require('dir-cleaner');
 /**
  * When you invocate the required dir-cleaner function, it will return a
  * constructor. The object you pass as the 1st argument its properties
- * will get bound to the 
+ * will get bound to the prototype of the returned constructor.
  */
-var DirCleaner = dir_cleaner({
+var DirCleaner = dir_cleane.getConstructor({
 
 });
 
@@ -54,6 +60,10 @@ var dirCleaner = new DirCleaner({
     /** Used to set properties to the instance */
     properties: {
     }
+});
+
+dirCleaner.clean({
+    
 });
 ```
 

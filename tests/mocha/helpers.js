@@ -9,7 +9,7 @@ describe('Helper functions', function (){
         assert.equal(typeof ensureObject, 'function');
       });
     });
-    describe('##Using the function', function (){
+    describe('##Calling the function', function (){
       it('returns the same empty object when argument 1 is an empty object', function (){
         var empty_object = {};
         assert.equal(ensureObject(empty_object), empty_object);

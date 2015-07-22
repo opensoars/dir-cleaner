@@ -6,6 +6,9 @@ var cleanDirBasic = dir_cleaner.basic('/temp');
 
 //cleanDirBasic();
 
+//require('./lib/dir-cleaner.js').basic('/temp').clean();
+
+//require('./lib/dir-cleaner.js')('/temp');
 
 /*
 var TempCleaner = dir_cleaner();

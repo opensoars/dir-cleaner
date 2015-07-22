@@ -27,7 +27,7 @@ var cleanTemp = require('dir-cleaner').basic('/temp');
 
 Basic one time usage
 ```js
-require('dir-cleaner').basic('/temp')();
+require('dir-cleaner').basic('/temp').clean();
 
 // or
 require('dir-cleaner')('/temp');

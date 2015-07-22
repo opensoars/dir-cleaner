@@ -38,6 +38,31 @@ Full control usage (wizardry):
 var cleanTemp = (new (require('dir-cleaner')({dir: '/doc'}))({a: 'b'})).clean;
 ```
 
+Full control usage (wizardry, explained):
+```js
+var temp_cleaner_prototype_config = {dir: '/doc'},
+    temp_cleaner_instance_config = {a: 'b'};
+
+// Bind the clean method to this variable
+var cleanTemp = (
+  // Create a new dir-cleaner instance
+  new (
+    // From the dir-cleaner module
+    require('dir-cleaner')
+      // By invoking the dir-cleaner module and passing it the
+      // temp_cleaner_prototype_config object, which gets bound to
+      // the constructor its prototype
+      (temp_cleaner_prototype_config)
+  )
+  // Which will have the temp_cleaner_instance_config object its
+  // properties bound to it
+  (temp_cleaner_instance_config)
+// The returned result is a dir-cleaner instance, which holds all our
+// methods, we bind this to the cleanTemp variable
+).clean;
+```
+
+
 Full control usage (non-wizardry):
 ```js
 
@@ -57,17 +82,17 @@ var DirCleaner = dir_cleane.getConstructor({
  */
 var dirCleaner = new DirCleaner({
 
-    recurse: true,
+  recurse: true,
 
-    exclude: ['*.js', '.gitignore'],
+  exclude: ['*.js', '.gitignore'],
 
-    logger: function(msg) {
-        console.log('[dirCleaner]', msg);
-    },
+  logger: function(msg) {
+    console.log('[dirCleaner]', msg);
+  },
 
-    /** Used to set properties to the instance */
-    properties: {
-    }
+  /** Used to set properties to the instance */
+  properties: {
+  }
 });
 
 dirCleaner.clean({

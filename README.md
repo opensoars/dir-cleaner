@@ -57,8 +57,9 @@ var cleanTemp = (
   // Which will have the temp_cleaner_instance_config object its
   // properties bound to it
   (temp_cleaner_instance_config)
-// The returned result is a dir-cleaner instance, which holds all our
-// methods, we bind this to the cleanTemp variable
+// The returned result is a dir-cleaner instance, which holds all the
+// dir-cleaner methods, the clean method will get bound to the
+// cleanTemp variable
 ).clean;
 ```
 

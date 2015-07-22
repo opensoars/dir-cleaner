@@ -20,10 +20,10 @@
     
   },
   "devDependencies": {
-    "mocha": "*",
-    "istanbul": "*",
-    "coveralls": "*",
-    "jsdoc": "*"
+    "mocha": "2.2.5",
+    "istanbul": "0.3.17",
+    "coveralls": "2.11.3",
+    "jsdoc": "3.3.2"
   },
 
   "repository": {

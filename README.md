@@ -74,7 +74,7 @@ var dir_cleaner = require('dir-cleaner');
  * constructor. The object you pass as the 1st argument its properties
  * will get bound to the prototype of the returned constructor.
  */
-var DirCleaner = dir_cleane.getConstructor({
+var DirCleaner = dir_cleaner.getConstructor({
 
 });
 

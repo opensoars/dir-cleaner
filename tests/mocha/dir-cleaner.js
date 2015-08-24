@@ -1,7 +1,7 @@
 var assert = require('assert');
 
 describe('', function (){
-  it('', function (){z
+  it('', function (){
     
   });
 });

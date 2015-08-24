@@ -17,6 +17,7 @@ Configurable directory cleaner.
 
 `npm install dir-cleaner`
 
+
 ## Use
 
 Basic usage
@@ -101,9 +102,11 @@ dirCleaner.clean({
 });
 ```
 
+
 ## Tests and code coverage
 
 `npm run local_test`, coverage information can be viewed in the browser at `./coverage/lcov-report/index.html`.
+
 
 ## Documentation
 `npm run doc`, documentation can be viewed in the browser at `./doc/jsdoc/index.html`.

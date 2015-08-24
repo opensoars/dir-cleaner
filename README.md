@@ -76,7 +76,7 @@ var dir_cleaner = require('dir-cleaner');
  * will get bound to the prototype of the returned constructor.
  */
 var DirCleaner = dir_cleaner.getConstructor({
-
+  dir: '/temp'
 });
 
 /**

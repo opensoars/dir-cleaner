@@ -2,7 +2,24 @@ var dir_cleaner = require('./lib/dir-cleaner.js');
 
 module.exports = dir_cleaner;
 
-var cleanDirBasic = dir_cleaner.basic('/temp');
+//var cleanDirBasic = dir_cleaner.basic('/temp');
+
+//var t = new (dir_cleaner.getConstructor());
+
+
+var DirCleaner = dir_cleaner.getConstructor({
+  dir: '/temp'
+});
+
+/*
+var dirCleaner = DirCleaner.getInstance({
+
+});
+*/
+
+console.log( DirCleaner.getInstance({ properties: { i: true} }) );
+
+
 
 //cleanDirBasic();
 

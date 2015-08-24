@@ -8,7 +8,9 @@ module.exports = dir_cleaner;
 
 
 var DirCleaner = dir_cleaner.getConstructor({
-  dir: '/temp'
+  dir: __dirname + '/temp',
+  async: true,
+  recurse: true
 });
 
 /*
@@ -18,18 +20,13 @@ var dirCleaner = DirCleaner.getInstance({
 */
 
 var dirCleaner = DirCleaner.getInstance({
-  properties: {
-    i: true
-  }
+  async: false
 });
 
-dirCleaner.clean({}, function () {
-  console.log('cb 1 called');
-});
+dirCleaner.clean();
 
-dirCleaner.clean(function () {
-  console.log('cb 2 called');
-});
+
+console.log(dirCleaner.async);
 
 //cleanDirBasic();
 

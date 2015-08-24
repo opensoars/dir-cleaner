@@ -91,10 +91,6 @@ var dirCleaner = new DirCleaner({
 
   logger: function(msg) {
     console.log('[dirCleaner]', msg);
-  },
-
-  /** Used to set properties to the instance */
-  properties: {
   }
 });
 

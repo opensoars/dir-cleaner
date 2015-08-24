@@ -17,9 +17,19 @@ var dirCleaner = DirCleaner.getInstance({
 });
 */
 
-console.log( DirCleaner.getInstance({ properties: { i: true} }) );
+var dirCleaner = DirCleaner.getInstance({
+  properties: {
+    i: true
+  }
+});
 
+dirCleaner.clean({}, function () {
+  console.log('cb 1 called');
+});
 
+dirCleaner.clean(function () {
+  console.log('cb 2 called');
+});
 
 //cleanDirBasic();
 

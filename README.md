@@ -82,6 +82,7 @@ var DirCleaner = dir_cleaner.getConstructor({
 /**
  * Create new instance.
  */
+// var dirCleaner = DirCleaner.getInstance({
 var dirCleaner = new DirCleaner({
 
   recurse: true,
